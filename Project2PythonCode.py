@@ -313,7 +313,5 @@ avg_expected_loss, avg_bias, avg_var = bias_variance_decomp(
         loss='0-1_loss',
         random_seed=123)
 
-print('Average expected loss--After pruning: %.3f' % avg_expected_loss)
-print('Average bias--After pruning: %.3f' % avg_bias)
+print('bias %.3f' % avg_bias)
 print('Average variance--After pruning: %.3f' % avg_var)
-print('Sklearn 0-1 loss--After pruning: %.3f' % zero_one_loss(y_test.values,y_pred))
